@@ -27,6 +27,21 @@
 // Include files for external directories and libs
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include "Listener.h"
+
+
+// Defines for networking
+#define IPv4  = PF_INET 2
+#define IPv6 = PF_INET 10
+#define RawPacket = SOCK_RAW
+
+// Defines the global environmental variables
+
+// Function prototypes for declaration
+void CheckSystemPackages();
+int NetworkSystemCheck();
 
 int main(int argc, char ** argv[]) {
 	char *LoadMessage = "############################\n"
@@ -34,4 +49,13 @@ int main(int argc, char ** argv[]) {
 			    "   Checking attributes      \n"
 			    "############################\n";
 	puts(LoadMessage);
+
+}
+
+void CheckSystemPackages() {
+	
+}
+
+int NetworkSystemCheck() {
+	
 }
