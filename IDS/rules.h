@@ -21,7 +21,10 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
+void Listner(int IPv4,int IPv6) {
+	IPv4 = socket(AF_INET,SOCK_RAW,)
+}
 
-void ARPSpoofInspection(MAC) {
-	puts("TEST!");
+int ICMP_DETECTION_RULEIPv4() {
+
 }

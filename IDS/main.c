@@ -29,13 +29,15 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/socket.h>
-#include "Listener.h"
+//#include "Listener.h"
 
 
 // Defines for networking
 #define IPv4  = PF_INET 2
 #define IPv6 = PF_INET 10
 #define RawPacket = SOCK_RAW
+
+#define WebServerSccript = "/Web Client/Webserver.py"
 
 // Defines the global environmental variables
 
@@ -51,6 +53,10 @@ int main(int argc, char ** argv[]) {
 	puts(LoadMessage);
 
 }
+
+int WebServerInit() {
+
+} 
 
 void CheckSystemPackages() {
 	
